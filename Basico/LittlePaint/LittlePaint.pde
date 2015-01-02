@@ -25,27 +25,25 @@ int pincel = 10;
 int goma = 20;
 color c1 = color(0, 0, 0);
 
-/***************************************************
+/******************************************************************************************************
  *  Nombre:      Setup
  *  Retornos:    Nada
  *  Parametros:  Nada
- *  Descripcion: Función de configuracion, tamaño, 
- *	fondo y trazo. 
-***************************************************/
+ *  Descripcion: Función de configuracion, tamaño, fondo y trazo. 
+******************************************************************************************************/
 void setup(){
  	size(480, 420);
  	background(255);
  	smooth();
 }
 
-/***************************************************
+/******************************************************************************************************
  *  Nombre:      Loop
  *  Retorna:     Nada
  *  Parametros:  Nada
- *  Descripcion: Se dibuja un circulo en la esquina
- *	superior izquierda para visulizar el color del 
- *	pincel.
-***************************************************/
+ *  Descripcion: Se dibuja un circulo en la esquina superior izquierda para visulizar el color 
+ *  del pincel.
+******************************************************************************************************/
 void draw(){
 	pushMatrix();
 	fill(c1);
@@ -54,13 +52,12 @@ void draw(){
 	popMatrix();
 }
 
-/***************************************************
+/******************************************************************************************************
  *  Nombre:      mouseDragged 
  *  Retornos:    Nada
  *  Parametros:  Nada
- *  Descripción: Seleccion de pincel y goma degun el
- *  clic.
- ***************************************************/
+ *  Descripción: Seleccion de pincel y goma degun el clic.
+ ******************************************************************************************************/
 void mouseDragged() {
   if (mouseButton == LEFT) {
 		  stroke(c1);
@@ -74,13 +71,13 @@ void mouseDragged() {
   }
 }
 
-/***************************************************
+/******************************************************************************************************
  *  Nombre:      keyPressed
  *  Retornos:    Nada
  *  Parametros:  Nada
  * Descripción:  Aumenta grosor de goma y seleccion 
  * de color
- ***************************************************/
+ ******************************************************************************************************/
  
 void keyPressed() {
   if (key == CODED) {
@@ -99,21 +96,22 @@ void keyPressed() {
 	      println("Nueva Hoja");
 	    	break;
 
-	    case '1':  
+	    case 'n':
+	    case 'N':  
 	      c1 = color(0, 0, 0);
 	      println("Pincel Negro");   
 	    	break;
 
-	    case '2': 
+	    case '1': 
 	      c1 = color(256, 0, 0);
 	      println("Pincel Rojo");
 	    	break;
 
-	    case '3': 
+	    case '2': 
 	      c1 = color(0, 256, 0);
 	      println("Pincel Verde"); 
 	    	break;
-	    case '4': 
+	    case '3': 
 	      c1 = color(0, 0, 256);
 	      println("Pincel Azul");
 	      	break; 
@@ -124,12 +122,12 @@ void keyPressed() {
   }
 }
 
-/***************************************************
+/******************************************************************************************************
  *  Nombre:      mouseWheel(MouseEvent event)  
  *  Retornos:    Nada
  *  Parametros:  MouseEvent event
  * Descripción:  Aumenta el grosor del pincel
- ***************************************************/
+ ******************************************************************************************************/
  
 void mouseWheel(MouseEvent event) {
   float e = event.getCount();
