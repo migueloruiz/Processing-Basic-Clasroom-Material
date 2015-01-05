@@ -5,6 +5,10 @@ Aquí puedes encontrar el material de los cursos de Processing, todos este mater
 Para ver una copia de esta licencia puedes verla en el archivo LECENSE.txt o visita http://creativecommons.org/licenses/by-nc-sa/4.0/.
 
 # Agradecimientos especiales a:
+• Ben Fry
+• Casey Reas
+• Processing.org
+• Shinysparks
 
 # Contacto:
 * Web:     [miguelo.me](miguelo.me)
