@@ -1,0 +1,7 @@
+String[][] mensajes = 
+ /* 				Piedra                 Papel   				Tijera  Lagarto Spock*/
+ /* Piedra  */ {{ "Empate" , "Pierdes: El papel cubre a la piedra.", "Ganas: La piedra aplasta las tijeras.","Ganas: La piedra aplasta al lagarto", "Pierdes: Spock vaporiza la piedra"}
+ /* Papel   */,{"Ganas: El papel cubre a la piedra", "Empate", "Pierdes: Las tijeras cortan el papel", "Pierdes: El lagarto se come el papel", "Ganas: El papel desautoriza a Spock."}
+ /* Tijera  */,{"Pierdes: La piedra aplasta las tijeras.","Ganas: Las tijeras cortan el papel", "Empate","Ganas: Las tijeras decapitan al lagarto","Pierdes: Spock destroza las tijeras"}
+ /* Lagarto */,{"Pierdes: La piedra aplasta al lagarto.","Ganas: El lagarto se come el papel.","Pierdes: Las tijeras cortan el papel.", "Empate" , "Ganas: El lagarto envenena a Spock."}
+ /* Spock   */,{"Ganas: Spock vaporiza la piedra.","Pierdes: El papel desautoriza a Spock.","Ganas: Spock destroza las tijeras.","Pierdes: El lagarto envenena a Spock.","Empate"}};
