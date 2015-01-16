@@ -64,7 +64,7 @@ public void setup() {
   plot.setYLim(0, 5);
 
 
-  plot.setTitleText("Graficador");
+  plot.setTitleText("Grafica Sensor");
   plot.getYAxis().setAxisLabelText("Voltaje (0 - 5)V");
   plot.getXAxis().setAxisLabelText("Muestras");
   plot.setPointColor(color(200, 200, 255));
@@ -111,7 +111,6 @@ public void draw(){
 ******************************************************************************************************/
 
 public void serialEvent( Serial port) {
-
   String val = port.readStringUntil(' ');
   if (val != null) {
     val = trim(val);
